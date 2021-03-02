@@ -29,7 +29,7 @@ def main():
 #---------------------------------------------------#
 def usage():
     print("""
-    simdifcount.py calculates the percentages of simmilarities and differences
+    simdifcount.py calculates the percentages of similarities and differences
     of an alignment of sequences.
 
     exemple of command line:
