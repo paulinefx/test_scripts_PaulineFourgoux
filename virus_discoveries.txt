@@ -1,0 +1,39 @@
+Question 1
+I used blastp, protein version of the Basic Local Alignment Search Tool.
+It aligns the sequence to sequences of known proteins using the database RefSeq non-redundant proteins.
+seq_1 was identified as a caspid protein from Adeno-associated virus 4 with 100% coverage.
+seq_2 was identified as a caspid prtein VP1 from Adeno-associated virus with 100% coverage.
+
+Question 2
+Using Python3, I coded createmultifasta.py. It takes as argument a file, which contains the file names of
+the sequences and the results from blastp, and the output name.
+python3 createmultifasta.py -i seqNres.txt -o outputname.fasta
+
+Question 3
+I used Clustal Omega from the EBI for the multi-sequence alignment as it uses Hidden Markov models for the alignment.
+HMMs have been proven as one of the best method to align multiple sequences together. In the past, I have used
+HHblits which uses also HMM. However, it does not have a web interface. Clustal Omega is good in that way to be
+able to run a quick alignment. For several sequences, I would probably take another approach, coding wise.
+
+Question 4
+A simple approach of recording the similarities and differences is counting the percentage of identities, gaps
+and mismatch. This approach can be improved by looking at percentage of identity of the active site, as it is
+the most important part of the protein. From the sequence files and their NCBI page, we do not have the information
+of the active sit localisation. Therefore, I can only count the similarities and differencies. 
+
+Question 5
+Alignment similarities and differences :
+Percentage of conserved residues :  62.38 %
+Percentage of strongly conserved residue properties :  12.85 %
+Percentage of weakly conserved residue properties :  8.3 %
+Percentage of residues not conserved :  16.47 %
+Percentage of overall conservation :  83.53 %
+seq_1 and seq_2 have an overall residue conservation of 83.53%, which is very high. We can conclude that the two proteins 
+are homologous in the two viruses.
+
+Question 6
+As the two proteins are caspid proteins, they probably have the same function and interactome. It would be 
+interesting to look at the difference of structure using pdb files and pdb viewer. The structures don't have to be
+exactly similar to be homologous proteins. The structure is important as key places such as interaction sites. If 
+the structure is different at one of these sites, that would mean they don't interact with the same molecules and
+probably don't have the same function in the two viruses.

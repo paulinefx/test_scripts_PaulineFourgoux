@@ -1,0 +1,2 @@
+seq_1.txt	seq_1-Alignment-Descriptions.csv
+seq_2.txt	seq_2-Alignment-Descriptions.csv
