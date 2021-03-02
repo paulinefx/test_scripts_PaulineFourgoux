@@ -41,7 +41,7 @@ def main():
 #---------------------------------------------------#
 def usage():
     print("""
-    createmultifasta.py create a multi fasta file from the lists of sequence
+    createmultifasta.py creates a multi fasta file from the lists of sequence
     files and blastp results given as arguments.
 
     exemple of command line:
